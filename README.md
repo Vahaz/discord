@@ -12,7 +12,11 @@ This program is a proof-of-concept, for the usage of a Personal Keys from the RI
 
 :warning: This being my first Discord BOT / API usages, I might be wrong on some (major?) details.
 
-# RATE LIMITS
+# 👀 PREVIEW
+
+![preview](https://github.com/Vahaz/match_logger_v2/blob/main/GITHUB-THUMBNAIL.png?raw=true)
+
+# ⛔️ RATE LIMITS
 According to [RIOT API Documentation](https://developer.riotgames.com):
 → Rate Limits [20 requests every 1 seconds(s) & 100 requests every 2 minutes(s)]
 
@@ -28,20 +32,20 @@ The program use between : 1 and 3 requests per usage.
 - 3 requests (on start) : Bot Log-In, Bot Activity, Command Creation.
 - 1 request: Interaction reply.
 
-# PROCESS
+# ♻️ PROCESS
 - The BOT take from a client-user command with the following arguments : #REGION & #SUMMONER_ID.
 
-## STEP 1 - FETCH:
+## 1️⃣ STEP 1 - FETCH:
 - 3 .JS functions fetch the Riot API:
 - - To convert the #SUMMONER_ID to #PLAYER_UUID.
 - - To get a list (of size one) of the recent match (#MATCH_ID) using #PLAYER_UUID.
 - - To get the #MATCH_DATA in a JSON format from the #MATCH_ID.
 
-## STEP 1 (bis) - CACHE:
+## 1️⃣ STEP 1 (bis) - CACHE:
 - IF the #SUMMONER_ID has already been provided before, it will recover the #PLAYER_UUID from the #CACHE Map.
 - IF the #MATCH_ID has already been provided before, it will recover the #MATCH_DATA from the #CACHE Map.
 
-## STEP 2 - FORMAT & IMAGE:
+## 2️⃣ STEP 2 - FORMAT & IMAGE:
 - 2 .JS functions:
 - - Extract from the JSON formatted data (#MATCH_DATA) and store them in a #RESULT Array.
 - - Generate the thumbnail attached using #MERGE-IMAGES and #CONVERT-BASE64-TO-IMAGE modules.
@@ -60,7 +64,7 @@ BOT_ID="" → Discord BOT ID.
 
 :warning: IF YOU PLAN TO USE THIS CODE FOR YOURSELF, BEWARE NOT TO SHARE THE TOKENS AND APIS KEYS TO ANYONE. :warning:
 
-# CREDITS
+# 💬 CREDITS
 According to [RIOT API Documentation](https://developer.riotgames.com), here the "Approved Use Cases for Personal Keys" for this program:
 - Creating a proof of concept for a Production Key request for showing (self) player stats.
 
