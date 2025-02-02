@@ -1,0 +1,35 @@
+{
+  "name": "match-logger",
+  "version": "1.0.0",
+  "description": "A League Of Legends' Match-Logger Discord Bot",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "Riot Games",
+    "Riot",
+    "Riot API",
+    "NodeJS",
+    "Canva",
+    "Embeds",
+    "League of Legends",
+    "Match Logger",
+    "Discord",
+    "Discord BOT"
+  ],
+  "author": "Vahaz",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "convert-base64-to-image": "^0.0.16",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "merge-images": "^2.0.0"
+  }
+}
